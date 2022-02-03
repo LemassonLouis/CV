@@ -5,10 +5,12 @@
     <title>Curriculum Vitae NOM Prénom</title>
 
     <meta charset="UTF-8">
-    <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@300;500;800&display=swap" rel="stylesheet">
+    <!-- <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@300;500;800&display=swap" rel="stylesheet"> -->
 
     <link rel="stylesheet" href="./css/page.css">
     <link rel="stylesheet" href="./css/CV.css">
+    <link rel="stylesheet" href="./css/variable.css">
+    <link rel="stylesheet" href="./css/fonts/fonts.css">
 
     <style>
         @page {
@@ -24,7 +26,7 @@
 
         <div id="bandeau-header">
             <div id="photo">
-                <!-- <img src="./img/Photo de moi tronque.jpg"> -->
+                <img src="./img/Photo de moi tronque.jpg">
             </div>
 
             <div id="info-alternance">
@@ -33,7 +35,7 @@
         </div>
 
         <div id="bandeau-aside">
-            <div class="bloc-info">
+            <div class="bloc-aside">
                 <div id="titre-info-perso">NOM Prénom</div>
                 <div class="texte-bloc-info">00 00 00 00 00</div>
                 <div class="texte-bloc-info">adressemail@gmail.com</div>
@@ -44,7 +46,7 @@
                 <div class="texte-bloc-info">Permis B</div>
             </div>
 
-            <div class="bloc-info">
+            <div class="bloc-aside">
                 <div class="titre-bloc-info">soft skills</div>
                 <div class="texte-bloc-info">Motivation</div>
                 <div class="texte-bloc-info">Communication</div>
@@ -52,7 +54,7 @@
                 <div class="texte-bloc-info">Positivité</div>
             </div>
 
-            <div class="bloc-info">
+            <div class="bloc-aside">
                 <div class="titre-bloc-info">intérêts</div>
 
                 <table id="table-info-image">
@@ -72,12 +74,96 @@
         </div>
 
         <div id="bandeau-body">
-            <div>
+            <div class="bloc-body">
                 <div class="titre-bloc-info">compétences</div>
+
+                <fieldset class="bloc-competence">
+                    <legend>développement</legend>
+
+                    <div class="competence">
+                        <div class="losange"></div>
+                        HTML
+                    </div>
+
+                    <div class="competence">
+                        <div class="losange"></div>
+                        CSS
+                    </div>
+
+                    <div class="competence">
+                        <div class="losange"></div>
+                        PHP
+                    </div>
+
+                    <div class="competence">
+                        <div class="losange"></div>
+                        JAVASCRIPT
+                    </div>
+
+                    <div class="competence">
+                        <div class="losange"></div>
+                        SQL
+                    </div>
+
+                    <div class="competence">
+                        <div class="losange"></div>
+                        Python
+                    </div>
+                </fieldset>
+
+                <fieldset class="bloc-competence">
+                    <legend>langues</legend>
+
+                    <div class="competence">
+                        <div class="losange"></div>
+                        Anglais
+                    </div>
+
+                    <div class="competence">
+                        <div class="losange"></div>
+                        Espagnol
+                    </div>
+                </fieldset>
             </div>
 
-            <div>
+            <div class="bloc-body">
                 <div class="titre-bloc-info">expériences professionnelles</div>
+
+                <div class="bloc-experience-pro">
+                    <div class="rond-experience-pro"></div>
+                    <div class="titre-experience-pro">Alternance chez LEONARD SOLUTIONS - 2020/2022</div>
+                    <div class="texte-experience-pro">
+                        Algdfgdfgdfg<br>
+                        - 1<br>
+                        - 2
+                    </div>
+                </div>
+
+                <div class="bloc-experience-pro">
+                    <div class="rond-experience-pro"></div>
+                    <div class="titre-experience-pro">Stage</div>
+                    <div class="texte-experience-pro">
+                        Algdfgdfgdfg<br>
+                        - 1<br>
+                        - 2<br>
+                        - 1<br>
+                        - 2<br>
+                        - 1<br>
+                        - 2
+                    </div>
+                </div>
+
+                <div class="bloc-experience-pro">
+                    <div class="rond-experience-pro"></div>
+                    <div class="titre-experience-pro">Emploi</div>
+                    <div class="texte-experience-pro">
+                        Algdfgdfgdfg<br>
+                        - 1<br>
+                        - 2<br>
+                        - 1<br>
+                        - 2
+                    </div>
+                </div>
             </div>
         </div>
 

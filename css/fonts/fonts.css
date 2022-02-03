@@ -1,0 +1,14 @@
+@font-face {
+    font-family: "Nunito Light";
+    src: url("./Nunito-Light.woff") format("woff");
+}
+
+@font-face {
+    font-family: "Nunito Medium";
+    src: url("./Nunito-Medium.woff") format("woff");
+}
+
+@font-face {
+    font-family: "Nunito Extra Bold";
+    src: url("./Nunito-ExtraBold.woff") format("woff");
+}

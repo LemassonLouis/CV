@@ -1,0 +1,20 @@
+:root {
+    --largeur-bandeau-aside: 55mm;
+    --largeur-bandeau-body: 155mm;
+    --hauteur-bandeau-header: 45mm;
+    --hauteur-bandeau-body: 252mm;
+
+    --taille-police-header: 1.8em;
+    --taille-grand-titre: 1.15em;
+    --taille-petit-titre: 0.95em;
+    --taille-grand-texte: 0.9em;
+    --taille-petit-texte: 0.8em;
+
+    --couleur-forme: #0095ff;
+
+    --margin-titre-texte-experience: 2.1mm;
+    
+    --police-light: "Nunito Light", sans-serif;
+    --police-medium: 'Nunito Medium', sans-serif;
+    --police-bold: "Nunito Extra Bold", sans-serif;
+}
