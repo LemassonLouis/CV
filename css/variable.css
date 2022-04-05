@@ -1,15 +1,19 @@
 :root {
-    --largeur-bandeau-aside: 55mm;
-    --largeur-bandeau-body: 155mm;
-    --hauteur-bandeau-header: 45mm;
-    --hauteur-bandeau-body: 252mm;
+    --width-aside: 55mm;
+    --width-body: calc(210mm - var(--width-aside));
+    --height-header: 40mm;
+    --height-body: calc(297mm - var(--height-header));
 
-    --taille-police-header: 1.8em;
+    --taille-rond: 4.5mm;
+
+    --taille-police-header: 1.7em;
     --taille-grand-titre: 1.15em;
     --taille-petit-titre: 0.95em;
     --taille-grand-texte: 0.9em;
     --taille-petit-texte: 0.8em;
 
+    --couleur-header: #0065AD;
+    --couleur-aside: #EAEAEA;
     --couleur-forme: #0095ff;
 
     --margin-titre-texte-experience: 2.1mm;
