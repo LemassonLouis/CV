@@ -221,6 +221,56 @@
 
 
 
+.part-experience2 {
+    margin-top: 5mm;
+    margin-bottom: -5mm;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: center;
+}
+
+.rond-experience2 {
+    box-sizing: border-box;
+    width: 5mm;
+    height: 5mm;
+    background-color: var(--couleur-forme);
+    border: solid 2px black;
+    border-radius: 3.5mm;
+}
+
+.titre-experience2 {
+    padding-left: 2mm;
+    font-size: var(--taille-petit-titre);
+    font-family: var(--police-bold);
+    width: calc(100% - 5mm - 2mm);
+}
+
+.barre-experience2 {
+    display: flex;
+    justify-content: center;
+    align-self: stretch;
+    width: 0.5mm;
+    margin-left: 2.25mm;
+    margin-right: 2.25mm;
+    background-color: black;
+}
+
+.texte-experience2 {
+    padding-left: 2mm;
+    font-family: var(--police-light);
+    font-size: var(--taille-petit-texte);
+    line-height: 4.5mm;
+    color: #444444;
+    width: calc(100% - 5mm - 2mm);
+}
+
+
+
+
+
+
+
 
 
 
