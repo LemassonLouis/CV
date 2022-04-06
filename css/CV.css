@@ -166,7 +166,7 @@ body {
 }
 
 .skill-diamond {
-    margin-top: -1mm;
+    margin-top: -0.3mm;
     width: var(--diamond-size);
     height: var(--diamond-size);
     transform: rotate(45deg);
