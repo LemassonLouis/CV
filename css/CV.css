@@ -18,13 +18,25 @@ body {
     flex-wrap: wrap;
 }
 
+.block-title {
+    padding-left: 1mm;
+    font-size: var(--bloc-title-size);
+    font-family: var(--font-family-bold);
+    border-bottom: 1px solid var(--line-color);
+    text-transform: uppercase;
+}
+
+.block-title span {
+    text-transform: capitalize;
+}
+
 /* -------------------- */
 
 
 
 
 
-/* ---------- BANDEAU PHOTO ----------*/
+/* ---------- PHOTO ----------*/
 
 #photo {
     width: var(--aside-width);
@@ -40,9 +52,9 @@ body {
 
 
 
-/* ---------- BANDEAU HEADER ---------- */
+/* ---------- HEADER ---------- */
 
-#bandeau-header {
+#header-band {
     display: table;
     box-sizing: border-box;
     width: var(--body-width);
@@ -56,7 +68,7 @@ body {
     background-color: var(--header-color);
 }
 
-#bandeau-header span {
+#header-band span {
     display: table-cell;
     vertical-align: middle;
 }
@@ -67,9 +79,9 @@ body {
 
 
 
-/* ---------- BANDEAU ASIDE ---------- */
+/* ---------- ASIDE ---------- */
 
-#bandeau-aside {
+#aside-band {
     display: flex;
     flex-direction: column;
     flex-wrap: nowrap;
@@ -79,31 +91,19 @@ body {
     background-color: var(--aside-color);
 }
 
-.bloc-aside {
+.aside-block {
     margin-top: var(--bloc-aside-margtop);
     margin-bottom: var(--bloc-aside-margbot);
     width: 80%;
 }
 
-.titre-bloc {
-    padding-left: 1mm;
-    font-size: var(--bloc-title-size);
-    font-family: var(--font-family-bold);
-    border-bottom: 1px solid var(--line-color);
-    text-transform: uppercase;
-}
-
-.titre-bloc span {
-    text-transform: capitalize;
-}
-
-.texte-bloc-aside {
+.aside-text {
     padding: 1mm 1mm 0mm 1mm;
     font-size: var(--aside-text-size);
     border-bottom: 1px solid var(--line-color);
 }
 
-.images-bloc-aside {
+.aside-images-block {
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
@@ -111,7 +111,7 @@ body {
     padding-top: 2mm;
 }
 
-.image-bloc-aside {
+.aside-images-block img {
     width: 40%;
     object-fit: contain;
     padding-bottom: 2mm;
@@ -123,9 +123,9 @@ body {
 
 
 
-/* ---------- BANDEAU BODY ---------- */
+/* ---------- BODY ---------- */
 
-#bandeau-body {
+#body-band {
     display: flex;
     flex-direction: column;
     flex-wrap: nowrap;
@@ -134,15 +134,15 @@ body {
     height: var(--body-height);
 }
 
-.bloc-body {
+.body-block {
     margin-top: var(--bloc-body-margtop);
     margin-bottom: var(--bloc-body-margbot);
     width: 90%;
 }
 
-/* ---------- PART COMPETENCE ---------- */
+/* ---------- COMPETENCE ---------- */
 
-.part-competence {
+.block-skill {
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
@@ -151,13 +151,13 @@ body {
     border: solid 2px var(--line-color);
 }
 
-.titre-competence {
+.skill-title {
     font-size: var(--part-title-size);
     font-family: var(--font-family-bold);
     text-transform: uppercase;
 }
 
-.texte-competence {
+.skill-text {
     display: grid;
     grid-template-columns: repeat(2, 14% auto);
     width: 25%;
@@ -165,7 +165,7 @@ body {
     font-size: var(--competence-text-size);
 }
 
-.losange-competence {
+.skill-diamond {
     margin-top: -1mm;
     width: var(--diamond-size);
     height: var(--diamond-size);
@@ -177,9 +177,9 @@ body {
 /* -------------------- */
 
 
-/* ---------- PART EXPERIENCE ---------- */
+/* ---------- EXPERIENCE ---------- */
 
-.part-experience {
+.block-experience {
     margin-top: 5mm;
     margin-bottom: -6mm;
     display: flex;
@@ -188,7 +188,7 @@ body {
     align-items: center;
 }
 
-.rond-experience {
+.experience-sphere {
     box-sizing: border-box;
     width: var(--sphere-size);
     height: var(--sphere-size);
@@ -198,14 +198,14 @@ body {
     z-index: 2;
 }
 
-.titre-experience {
+.experience-title {
     padding-left: var(--part-exp-paddleft);
     font-size: var(--part-title-size);
     font-family: var(--font-family-bold);
     width: calc(100% - var(--sphere-size) - var(--part-exp-paddleft));
 }
 
-.barre-experience {
+.experience-bar {
     display: flex;
     justify-content: center;
     align-self: stretch;
@@ -215,7 +215,7 @@ body {
     z-index: 1;
 }
 
-.texte-experience {
+.experience-text {
     padding-left: var(--part-exp-paddleft);
     padding-bottom: 5mm;
     font-family: var(--font-family-light);
