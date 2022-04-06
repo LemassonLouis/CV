@@ -1,24 +1,38 @@
 :root {
-    --width-aside: 55mm;
-    --width-body: calc(210mm - var(--width-aside));
-    --height-header: 40mm;
-    --height-body: calc(297mm - var(--height-header));
+    --header-height: 40mm;
+    --aside-width: 55mm;
+    --body-width: calc(210mm - var(--aside-width));
+    --body-height: calc(297mm - var(--header-height));
 
-    --taille-rond: 4.5mm;
+    --sphere-size: 4.5mm;
+    --diamond-size: 2mm;
 
-    --taille-police-header: 1.7em;
-    --taille-grand-titre: 1.15em;
-    --taille-petit-titre: 0.95em;
-    --taille-grand-texte: 0.9em;
-    --taille-petit-texte: 0.8em;
+    --header-text-size: 20pt;
+    --bloc-title-size: 13pt;
+    --part-title-size: 11pt;
+    --aside-text-size: 10pt;
+    --competence-text-size: 9.5pt;
+    --experience-text-size: 9pt;
 
-    --couleur-header: #0065AD;
-    --couleur-aside: #EAEAEA;
-    --couleur-forme: #0095ff;
+    --header-text-color: #fff;
 
-    --margin-titre-texte-experience: 2.1mm;
-    
-    --police-light: "Nunito Light", sans-serif;
-    --police-medium: 'Nunito Medium', sans-serif;
-    --police-bold: "Nunito Extra Bold", sans-serif;
+    --bloc-aside-margtop: 8mm;
+    --bloc-aside-margbot: 4mm;
+    --bloc-body-margtop: 8mm;
+    --bloc-body-margbot: 4mm;
+
+    --part-exp-paddleft: 2mm;
+
+    --exp-barre-width: 0.5mm;
+    --exp-barre-margrl: calc((var(--sphere-size) - var(--exp-barre-width)) / 2);
+
+    --header-color: #0065AD;
+    --aside-color: #EAEAEA;
+    --shape-color: #0095ff;
+    --line-color: #000;
+    --shape-border-color: #000;
+
+    --font-family-light: "Nunito Light", sans-serif;
+    --font-family-medium: 'Nunito Medium', sans-serif;
+    --font-family-bold: "Nunito Extra Bold", sans-serif;
 }

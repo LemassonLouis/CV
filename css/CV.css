@@ -1,8 +1,8 @@
 /* ---------- GENERAL ---------- */
 
-    body {
-        font-family: 'Nunito Medium', sans-serif;
-    }
+body {
+    font-family: var(--font-family-medium);
+}
 
 /* -------------------- */
 
@@ -12,11 +12,11 @@
 
 /* ---------- PAGE CV ---------- */
 
-    #CV {
-        display: flex;
-        flex-direction: row;
-        flex-wrap: wrap;
-    }
+#CV {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
 
 /* -------------------- */
 
@@ -26,13 +26,13 @@
 
 /* ---------- BANDEAU PHOTO ----------*/
 
-    #photo {
-        width: var(--width-aside);
-        height: var(--height-header);
-        background-color: var(--couleur-header);
-        object-fit: cover;
-        object-position: center -3mm;
-    }
+#photo {
+    width: var(--aside-width);
+    height: var(--header-height);
+    background-color: var(--header-color);
+    object-fit: cover;
+    object-position: center -3mm;
+}
 
 /* -------------------- */
 
@@ -42,23 +42,24 @@
 
 /* ---------- BANDEAU HEADER ---------- */
 
-    #bandeau-header {
-        display: table;
-        box-sizing: border-box;
-        width: var(--width-body);
-        height: var(--height-header);
-        padding: 5mm;
-        color: white;
-        font-size: var(--taille-police-header);
-        text-align: center;
-        text-transform: uppercase;
-        background-color: var(--couleur-header);
-    }
+#bandeau-header {
+    display: table;
+    box-sizing: border-box;
+    width: var(--body-width);
+    height: var(--header-height);
+    padding: 5mm;
+    color: var(--header-text-color);
+    font-size: var(--header-text-size);
+    font-family: var(--font-family-bold);
+    text-align: center;
+    text-transform: uppercase;
+    background-color: var(--header-color);
+}
 
-    #bandeau-header span {
-        display: table-cell;
-        vertical-align: middle;
-    }
+#bandeau-header span {
+    display: table-cell;
+    vertical-align: middle;
+}
 
 /* -------------------- */
 
@@ -68,53 +69,53 @@
 
 /* ---------- BANDEAU ASIDE ---------- */
 
-    #bandeau-aside {
-        display: flex;
-        flex-direction: column;
-        flex-wrap: nowrap; 
-        align-items: center;
-        width: var(--width-aside);
-        height: var(--height-body);
-        background-color: var(--couleur-aside);
-    }
+#bandeau-aside {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    align-items: center;
+    width: var(--aside-width);
+    height: var(--body-height);
+    background-color: var(--aside-color);
+}
 
-    .bloc-aside {
-        margin-top: 8mm;
-        margin-bottom: 4mm;
-        width: 80%;
-    }
+.bloc-aside {
+    margin-top: var(--bloc-aside-margtop);
+    margin-bottom: var(--bloc-aside-margbot);
+    width: 80%;
+}
 
-    .titre-bloc {
-        padding-left: 1mm;
-        font-size: var(--taille-grand-titre);
-        font-family: var(--police-bold);
-        border-bottom: 1px solid black;
-        text-transform: uppercase;
-    }
+.titre-bloc {
+    padding-left: 1mm;
+    font-size: var(--bloc-title-size);
+    font-family: var(--font-family-bold);
+    border-bottom: 1px solid var(--line-color);
+    text-transform: uppercase;
+}
 
-    .titre-bloc span {
-        text-transform: capitalize;
-    }
+.titre-bloc span {
+    text-transform: capitalize;
+}
 
-    .texte-bloc-aside {
-        padding: 1mm 1mm 0mm 1mm;
-        font-size: var(--taille-grand-texte);
-        border-bottom: 1px solid black;
-    }
+.texte-bloc-aside {
+    padding: 1mm 1mm 0mm 1mm;
+    font-size: var(--aside-text-size);
+    border-bottom: 1px solid var(--line-color);
+}
 
-    .images-bloc-aside {
-        display: flex;
-        flex-direction: row;
-        flex-wrap: wrap;
-        justify-content: space-around;
-        padding-top: 2mm;
-    }
+.images-bloc-aside {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    padding-top: 2mm;
+}
 
-    .image-bloc-aside {
-        width: 40%;
-        object-fit: contain;
-        padding-bottom: 2mm;
-    }
+.image-bloc-aside {
+    width: 40%;
+    object-fit: contain;
+    padding-bottom: 2mm;
+}
 
 /* -------------------- */
 
@@ -124,204 +125,106 @@
 
 /* ---------- BANDEAU BODY ---------- */
 
-    #bandeau-body {
-        display: flex;
-        flex-direction: column;
-        flex-wrap: nowrap; 
-        align-items: center;
-        width: var(--width-body);
-        height: var(--height-body);
-    }
+#bandeau-body {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    align-items: center;
+    width: var(--body-width);
+    height: var(--body-height);
+}
 
-    .bloc-body {
-        margin-top: 8mm;
-        margin-bottom: 4mm;
-        width: 90%;
-    }
+.bloc-body {
+    margin-top: var(--bloc-body-margtop);
+    margin-bottom: var(--bloc-body-margbot);
+    width: 90%;
+}
 
-    /* ---------- PART COMPETENCE ---------- */
+/* ---------- PART COMPETENCE ---------- */
 
-        .part-competence {
-            display: flex;
-            flex-direction: row;
-            flex-wrap: wrap;
-            margin-top: 4mm;
-            padding: 0mm 3mm 1mm 3mm;
-            border: solid 2px black;
-        }
+.part-competence {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    margin-top: 4mm;
+    padding: 0mm 3mm 1mm 3mm;
+    border: solid 2px var(--line-color);
+}
 
-        .titre-competence {
-            color: black;
-            font-size: var(--taille-petit-titre);
-            font-family: var(--police-bold);
-            text-transform: uppercase;
-        }
+.titre-competence {
+    font-size: var(--part-title-size);
+    font-family: var(--font-family-bold);
+    text-transform: uppercase;
+}
 
-        .texte-competence {
-            display: grid;
-            grid-template-columns: repeat(2, 14% auto);
-            width: 25%;
-            align-items: center;
-            font-size: var(--taille-grand-texte);
-        }
+.texte-competence {
+    display: grid;
+    grid-template-columns: repeat(2, 14% auto);
+    width: 25%;
+    align-items: center;
+    font-size: var(--competence-text-size);
+}
 
-        .losange-competence {
-            margin-top: -1mm;
-            width: 2mm;
-            height: 2mm;
-            transform: rotate(45deg);
-            background-color: var(--couleur-forme);
-            border: solid 1px black;
-        }
-    
-    /* -------------------- */
-
-
-    /* ---------- PART EXPERIENCE ---------- */
-
-        .part-experience {
-            margin-top: 5mm;
-            margin-bottom: -5mm;
-        }
-
-        .rond-experience {
-            width: 3.5mm;
-            height: 3.5mm;
-            background-color: var(--couleur-forme);
-            border: solid 2px black;
-            border-radius: 3.5mm;
-        }
-
-        .titre-experience {
-            margin-top: -4.75mm;
-            margin-left: var(--margin-titre-texte-experience);
-            padding-left: 4.5mm;
-            font-size: var(--taille-petit-titre);
-            font-family: var(--police-bold);
-        }
-
-        .texte-experience {
-            margin-top: -1mm;
-            margin-left: var(--margin-titre-texte-experience);
-            padding: 1mm 1mm 6mm 4mm;
-            font-family: var(--police-light);
-            font-size: var(--taille-petit-texte);
-            line-height: 4.5mm;
-            color: #444444;
-            border-left: solid 2px black;
-        }
-    
-    /* -------------------- */
+.losange-competence {
+    margin-top: -1mm;
+    width: var(--diamond-size);
+    height: var(--diamond-size);
+    transform: rotate(45deg);
+    background-color: var(--shape-color);
+    border: solid 1px var(--shape-border-color);
+}
 
 /* -------------------- */
 
 
+/* ---------- PART EXPERIENCE ---------- */
 
-
-
-
-
-.part-experience2 {
+.part-experience {
     margin-top: 5mm;
-    margin-bottom: -5mm;
+    margin-bottom: -6mm;
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
     align-items: center;
 }
 
-.rond-experience2 {
+.rond-experience {
     box-sizing: border-box;
-    width: 5mm;
-    height: 5mm;
-    background-color: var(--couleur-forme);
-    border: solid 2px black;
-    border-radius: 3.5mm;
+    width: var(--sphere-size);
+    height: var(--sphere-size);
+    background-color: var(--shape-color);
+    border: solid 2px var(--shape-border-color);
+    border-radius: var(--sphere-size);
+    z-index: 2;
 }
 
-.titre-experience2 {
-    padding-left: 2mm;
-    font-size: var(--taille-petit-titre);
-    font-family: var(--police-bold);
-    width: calc(100% - 5mm - 2mm);
+.titre-experience {
+    padding-left: var(--part-exp-paddleft);
+    font-size: var(--part-title-size);
+    font-family: var(--font-family-bold);
+    width: calc(100% - var(--sphere-size) - var(--part-exp-paddleft));
 }
 
-.barre-experience2 {
+.barre-experience {
     display: flex;
     justify-content: center;
     align-self: stretch;
-    width: 0.5mm;
-    margin-left: 2.25mm;
-    margin-right: 2.25mm;
-    background-color: black;
+    width: var(--exp-barre-width);
+    margin: -4.5mm var(--exp-barre-margrl) 0mm var(--exp-barre-margrl);
+    background-color: var(--line-color);
+    z-index: 1;
 }
 
-.texte-experience2 {
-    padding-left: 2mm;
-    font-family: var(--police-light);
-    font-size: var(--taille-petit-texte);
+.texte-experience {
+    padding-left: var(--part-exp-paddleft);
+    padding-bottom: 5mm;
+    font-family: var(--font-family-light);
+    font-size: var(--experience-text-size);
     line-height: 4.5mm;
     color: #444444;
-    width: calc(100% - 5mm - 2mm);
+    width: calc(100% - var(--sphere-size) - var(--part-exp-paddleft));
 }
 
+/* -------------------- */
 
-
-
-
-
-
-
-
-
-.part-experience-test {
-    border-collapse: collapse;
-
-    width: 100%;
-    margin-top: 5mm;
-    margin-bottom: -5mm;
-}
-
-.rond-experience-test {
-    width: 0px;
-    height: 0px;
-}
-
-.rond-experience-test div {
-    box-sizing: border-box;
-    width: var(--taille-rond);
-    height: var(--taille-rond);
-    background-color: var(--couleur-forme);
-    border: solid 2px black;
-    border-radius: var(--taille-rond);
-}
-
-.ligne-experience-test {
-    margin-top: -2mm;
-    height: 0px;
-}
-
-.ligne-experience-test div {
-    width: 2px;
-    height: 100%;
-    margin: auto;
-    background-color: black;
-}
-
-.titre-experience-test, .texte-experience-test {
-    box-sizing: border-box;
-    width: auto;
-    padding-left: 2mm;
-}
-
-.titre-experience-test {
-    font-size: var(--taille-petit-titre);
-    font-family: var(--police-bold);
-}
-
-.texte-experience-test {
-    font-family: var(--police-light);
-    font-size: var(--taille-petit-texte);
-    line-height: 4.5mm;
-    color: #444444;
-}
+/* -------------------- */
