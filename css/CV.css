@@ -142,19 +142,22 @@ body {
 
 /* ---------- COMPETENCE ---------- */
 
-.block-skill {
+.block-skill-fieldset {
+    position: relative;
     display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
+    flex-flow: row wrap;
     margin-top: 4mm;
-    padding: 1mm 4mm 2mm 4mm;
+    padding: 3mm 4mm 2mm 4mm;
     border: solid 2px var(--line-color);
 }
 
-.skill-title {
+.skill-title-fieldset {
+    position: absolute;
+    margin-top: -6mm;
     font-size: var(--part-title-size);
     font-family: var(--font-family-bold);
     text-transform: uppercase;
+    background-color: white;
 }
 
 .skill-text {
@@ -221,8 +224,12 @@ body {
     font-family: var(--font-family-light);
     font-size: var(--experience-text-size);
     line-height: 4.5mm;
-    color: #444444;
+    color: var(--experience-text-color);
     width: calc(100% - var(--sphere-size) - var(--part-exp-paddleft));
+}
+
+.experience-text-link {
+    color: var(--experience-text-color);
 }
 
 /* -------------------- */

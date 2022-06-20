@@ -1,5 +1,10 @@
-@page { margin: 0 }
-body { margin: 0 }
+@page {
+  margin: 0
+}
+
+body {
+  margin: 0
+}
 
 .sheet {
   margin: 0;
@@ -10,18 +15,26 @@ body { margin: 0 }
 }
 
 /** Paper sizes **/
-body.A4 .sheet { width: 210mm; height: 297mm }
+body.A4 .sheet {
+  width: 210mm;
+  height: 297mm;
+}
 
 /** For screen preview **/
 @media screen {
-  body { background: #e0e0e0 }
+  body {
+    background: #e0e0e0;
+  }
+
   .sheet {
     background: white;
-    box-shadow: 0 .5mm 2mm rgba(0,0,0,.3);
+    box-shadow: 0 .5mm 2mm rgba(0, 0, 0, .3);
     margin: 5mm auto;
   }
 }
 
 @media print {
-  body.A4 { width: 210mm }
+  body.A4 {
+    width: 210mm;
+  }
 }
