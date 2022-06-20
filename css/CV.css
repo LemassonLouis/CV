@@ -115,6 +115,7 @@ body {
     width: 40%;
     object-fit: contain;
     padding-bottom: 2mm;
+    opacity: 0.6;
 }
 
 /* -------------------- */
