@@ -215,10 +215,9 @@
 
     .experience-bar {
         display: flex;
-        justify-content: center;
         align-self: stretch;
         width: var(--exp-barre-width);
-        margin: -4.5mm var(--exp-barre-margrl) 0mm var(--exp-barre-margrl);
+        margin: -0.5mm var(--exp-barre-margrl) 0.5mm var(--exp-barre-margrl);
         background-color: var(--line-color);
         z-index: 1;
     }
