@@ -1,0 +1,11 @@
+#download {
+    display: block;
+    margin: auto;
+    margin-bottom: 10px;
+}
+
+@media print {
+    #download {
+        display: none;
+    }
+}
