@@ -1,18 +1,20 @@
 async function download() {
 
     // Retrieve elements
-    const downloadButton = document.getElementById("download");
     const cv = document.getElementById("CV").cloneNode(true);
     const title = document.getElementsByTagName("title")[0].innerText;
 
     // Apply style changes
-    downloadButton.style.display = "none";
     cv.classList.remove("sheet");
     window.scrollTo(0, 0);
 
+    // Define margins depend of CV height and window height (to avoid the alignment problem due to the scroll bar)
+    let margin = [0, 0, -0.1, 0];
+    if(window.innerHeight < document.getElementsByTagName("html")[0].offsetHeight) margin = [0, -2.3, 0, 0];
+
     // Options for pdf convertion
     const opt = {
-        margin: [0, -2.3, 0, 0],
+        margin: margin,
         filename: `${title}.pdf`,
         image: {
             type: 'jpeg',
@@ -30,7 +32,4 @@ async function download() {
 
     // Convert to pdf
     await html2pdf().set(opt).from(cv).save();
-
-    // Undo style changes
-    downloadButton.style.display = "";
 }
