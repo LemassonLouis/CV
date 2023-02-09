@@ -97,13 +97,24 @@
         width: 80%;
     }
 
-    .aside-text {
+    .aside-text, .aside-link {
         padding: 1mm 1mm 0mm 1mm;
         font-size: var(--aside-text-size);
         border-bottom: 1px solid var(--line-color);
     }
 
-    .aside-text-link {
+    .aside-link {
+        display: flex;
+        flex-flow: row nowrap;
+    }
+
+    .aside-link-img {
+        width: 4mm;
+        height: 4mm;
+        margin-right: 1mm;
+    }
+
+    .aside-text-link, .aside-link-a {
         color: var(--text-base-color);
     }
 
