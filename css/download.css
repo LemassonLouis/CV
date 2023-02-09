@@ -6,33 +6,8 @@
 
 @media print {
 
-    /* #download {
-        display: none;
-    } */
-
-    /* .A4>#download {
-        display: none;
-    } */
-
-    /* body>#download {
-        display: none;
-    } */
-
-    /* #CV~* {
-        display: none;
-    } */
-
     body>*:not(#CV) {
         display: none;
     }
 
-
-
-    /* body>* {
-        display: none;
-    } */
-
-    /* body>#cv {
-        display: unset;
-    } */
 }
