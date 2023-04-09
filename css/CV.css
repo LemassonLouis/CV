@@ -59,12 +59,11 @@
         box-sizing: border-box;
         width: var(--body-width);
         height: var(--header-height);
-        padding: 5mm;
+        padding: 5mm 10mm;
         color: var(--header-text-color);
         font-size: var(--header-text-size);
         font-family: var(--font-family-bold);
         text-align: center;
-        text-transform: uppercase;
         background-color: var(--header-color);
     }
 
@@ -131,6 +130,10 @@
         object-fit: contain;
         padding-bottom: 2mm;
         opacity: 0.6;
+    }
+
+    #mail {
+        font-size: 9pt;
     }
 
 /* -------------------- */

@@ -2,7 +2,7 @@
 
     /* ----- DVIS SIZES ----- */
     --header-height: 40mm;
-    --aside-width: 55mm;
+    --aside-width: 60mm;
     --body-width: calc(210mm - var(--aside-width));
     --body-height: calc(297mm - var(--header-height));
 
@@ -11,7 +11,7 @@
     --diamond-size: 2mm;
 
     /* ----- TEXTS SIZES ----- */
-    --header-text-size: 15pt;
+    --header-text-size: 15.5pt;
     --bloc-title-size: 13pt;
     --part-title-size: 11pt;
     --aside-text-size: 10pt;
