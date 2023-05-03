@@ -37,12 +37,17 @@
 
 
 
-/* ---------- PHOTO ----------*/
+/* ---------- PICTURE ----------*/
 
-    #photo {
+    #picture {
         width: var(--aside-width);
         height: var(--header-height);
         background-color: var(--header-color);
+    }
+    
+    #picture>img {
+        width: 100%;
+        height: 100%;
         object-fit: cover;
     }
 
@@ -52,24 +57,24 @@
 
 
 
-/* ---------- HEADER ---------- */
+/* ---------- CATCH PHRASE ---------- */
 
-    #header-band {
-        display: table;
+    #catch_phrase {
         box-sizing: border-box;
+        display: flex;
+        align-items: center;
         width: var(--body-width);
         height: var(--header-height);
-        padding: 5mm 10mm;
+        padding: 0 10mm;
+        background-color: var(--header-color);
+    }
+    
+    #catch_phrase>p {
+        margin: 0;
         color: var(--header-text-color);
         font-size: var(--header-text-size);
         font-family: var(--font-family-bold);
         text-align: center;
-        background-color: var(--header-color);
-    }
-
-    #header-band>span {
-        display: table-cell;
-        vertical-align: middle;
     }
 
 /* -------------------- */
