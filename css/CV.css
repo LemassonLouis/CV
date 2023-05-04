@@ -85,23 +85,27 @@
 
 /* ---------- ASIDE ---------- */
 
-    #aside-band {
+    #aside {
         display: flex;
-        flex-direction: column;
-        flex-wrap: nowrap;
+        flex-flow: column nowrap;
         align-items: center;
         width: var(--aside-width);
         height: var(--body-height);
         background-color: var(--aside-color);
     }
 
-    .aside-block {
+    #aside>article {
         margin-top: var(--bloc-aside-margtop);
         margin-bottom: var(--bloc-aside-margbot);
         width: 80%;
     }
 
-    .aside-text, .aside-link {
+    #aside>article>h1 {
+        
+    }
+
+
+    /*.aside-text, .aside-link {
         padding: 1mm 1mm 0mm 1mm;
         font-size: var(--aside-text-size);
         border-bottom: 1px solid var(--line-color);
@@ -139,7 +143,7 @@
 
     #mail {
         font-size: 9pt;
-    }
+    } */
 
 /* -------------------- */
 
