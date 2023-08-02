@@ -32,7 +32,7 @@
     --bloc-body-margbot: 4mm;
 
     /* ----- PARTS EXP PADDINGS ----- */
-    --part-exp-paddleft: 2mm;
+    --part-exp-paddleft: 4mm;
 
     /* ----- EXP BARRE STYLES ----- */
     --exp-barre-width: 0.5mm;

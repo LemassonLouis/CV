@@ -5,7 +5,7 @@
         color: var(--text-base-color);
     }
 
-    h2 {
+    h2, h3, h4 {
         margin-block: 0mm;
     }
 
@@ -22,6 +22,7 @@
     }
 
     ul {
+        list-style-type: none;
         margin-block: 0mm;
         padding-inline-start: 0px;
     }
@@ -43,7 +44,7 @@
     .section-title {
         padding-left: 1mm;
         font-size: var(--bloc-title-size);
-        font-family: var(--font-family-bold);
+        font-family: var(--font-family-medium);
         border-bottom: 1px solid var(--line-color);
         text-transform: uppercase;
     }
@@ -121,10 +122,6 @@
         width: 80%;
     }
 
-    #aside>section>ul {
-        list-style-type: none;
-    }
-
     #aside>section>ul>li {
         padding: 1mm 1mm 0mm 1mm;
         font-size: var(--aside-text-size);
@@ -188,7 +185,7 @@
 
     #content>section {
         margin-top: var(--bloc-body-margtop);
-        margin-bottom: var(--bloc-body-margbot);
+        margin-bottom: 2mm;
         width: 90%;
     }
 
@@ -208,14 +205,14 @@
             margin-top: -6mm;
             padding: 0mm 1mm;
             font-size: var(--part-title-size);
-            font-family: var(--font-family-bold);
+            font-family: var(--font-family-medium);
             text-transform: uppercase;
             background-color: white;
         }
 
         #content>section#skills>article>ul {
             display: grid;
-            grid-template-columns: repeat(4, 25%);
+            grid-template-columns: repeat(auto-fit, 20%);
             width: 100%;
         }
 
@@ -241,53 +238,65 @@
 
     /* ---------- EXPERIENCE ---------- */
 
-        .block-experience {
-            margin-top: 5mm;
-            margin-bottom: -6mm;
-            display: flex;
-            flex-direction: row;
-            flex-wrap: wrap;
-            align-items: center;
+        #content>section#experiences>h2 {
+            margin-bottom: 4mm;
         }
 
-        .experience-sphere {
+        #content>section#experiences>article {
+            padding-bottom: 6mm;
+            border-left: solid 2px black;
+        }
+        
+        #content>section#experiences>article:first-child {
+            background-color: aqua;
+        }
+
+        #content>section#experiences>article>.experience-titles {
+            position: relative;
+            margin-bottom: 0.5mm;
+            padding-left: var(--part-exp-paddleft);
+            width: calc(100% - var(--sphere-size) - var(--part-exp-paddleft));
+            font-size: var(--part-title-size);
+            font-family: var(--font-family-medium);
+        }
+
+        #content>section#experiences>article>.experience-titles span {
+            font-family: var(--font-family-medium);
+            font-weight: initial;
+            font-size: var(--part-title-size);
+        }
+
+        #content>section#experiences>article>.experience-titles::before {
+            content: "";
             box-sizing: border-box;
+            position: absolute;
+            left: -2.5mm;
+            top: 50%;
+            translate: 0 -50%;
             width: var(--sphere-size);
             height: var(--sphere-size);
             background-color: var(--shape-color);
             border: solid 2px var(--shape-border-color);
             border-radius: var(--sphere-size);
-            z-index: 2;
         }
 
-        .experience-title {
-            padding-left: var(--part-exp-paddleft);
-            font-size: var(--part-title-size);
-            font-family: var(--font-family-bold);
-            width: calc(100% - var(--sphere-size) - var(--part-exp-paddleft));
-        }
-
-        .experience-bar {
-            display: flex;
-            align-self: stretch;
-            width: var(--exp-barre-width);
-            margin: -0.5mm var(--exp-barre-margrl) 0.5mm var(--exp-barre-margrl);
-            background-color: var(--line-color);
-            z-index: 1;
-        }
-
-        .experience-text {
-            padding-left: var(--part-exp-paddleft);
-            padding-bottom: 5mm;
+        #content>section#experiences>article>ul>li {
+            margin-left: 6mm;
+            padding-left: 1mm;
             font-family: var(--font-family-light);
             font-size: var(--experience-text-size);
             line-height: 4.5mm;
-            color: var(--experience-text-color);
+            color: var(--text-base-color);
             width: calc(100% - var(--sphere-size) - var(--part-exp-paddleft));
         }
 
-        .experience-text-link {
-            color: var(--experience-text-color);
+        #content>section#experiences>article>ul>li::marker {
+            content: "•";
+        }
+
+        #content>section#experiences>article>ul>li.additional::marker {
+            content: "+";
+            font-weight: bold;
         }
 
     /* -------------------- */
