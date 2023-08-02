@@ -253,6 +253,9 @@
 
         #content>section#experiences>article>.experience-titles {
             position: relative;
+        }
+        
+        #content>section#experiences>article>.experience-titles>h3, #content>section#experiences>article>.experience-titles>h4 {
             margin-bottom: 0.5mm;
             padding-left: var(--part-exp-paddleft);
             width: calc(100% - var(--sphere-size) - var(--part-exp-paddleft));
