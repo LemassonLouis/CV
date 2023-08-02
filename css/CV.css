@@ -175,9 +175,9 @@
 
 
 
-/* ---------- BODY ---------- */
+/* ---------- CONTENT ---------- */
 
-    #body-band {
+    #content {
         display: flex;
         flex-direction: column;
         flex-wrap: nowrap;
@@ -186,15 +186,15 @@
         height: var(--body-height);
     }
 
-    .body-block {
+    #content>section {
         margin-top: var(--bloc-body-margtop);
         margin-bottom: var(--bloc-body-margbot);
         width: 90%;
     }
 
-    /* ---------- COMPETENCE ---------- */
+    /* ---------- SKILLS ---------- */
 
-        .block-skill-fieldset {
+        #content>section#skills>article {
             position: relative;
             display: flex;
             flex-flow: row wrap;
@@ -203,25 +203,32 @@
             border: solid 2px var(--line-color);
         }
 
-        .skill-title-fieldset {
+        #content>section#skills>article>h3 {
             position: absolute;
             margin-top: -6mm;
+            padding: 0mm 1mm;
             font-size: var(--part-title-size);
             font-family: var(--font-family-bold);
             text-transform: uppercase;
             background-color: white;
         }
 
-        .skill-text {
+        #content>section#skills>article>ul {
             display: grid;
-            grid-template-columns: repeat(2, 14% auto);
-            margin: 0.4mm 0mm;
-            width: 25%;
-            align-items: center;
+            grid-template-columns: repeat(4, 25%);
+            width: 100%;
+        }
+
+        #content>section#skills>article>ul>li {
+            display: inline;
+            padding: 0.5mm 0mm;
             font-size: var(--competence-text-size);
         }
 
-        .skill-diamond {
+        #content>section#skills>article>ul>li::before {
+            content: "";
+            display: inline-block;
+            margin-right: 2mm;
             width: var(--diamond-size);
             height: var(--diamond-size);
             transform: rotate(45deg);
