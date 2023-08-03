@@ -21,6 +21,8 @@
     /* ----- TEXTS COLORS ----- */
     --text-base-color: #000;
     --header-text-color: #fff;
+    --hover-text-color: #0095ff;
+    --visited-text-color: #0065AD;
     --experience-text-color: #444;
 
     /* ----- BLOCS MARGINS ----- */
@@ -30,7 +32,7 @@
     --bloc-body-margbot: 4mm;
 
     /* ----- PARTS EXP PADDINGS ----- */
-    --part-exp-paddleft: 2mm;
+    --part-exp-paddleft: 4mm;
 
     /* ----- EXP BARRE STYLES ----- */
     --exp-barre-width: 0.5mm;

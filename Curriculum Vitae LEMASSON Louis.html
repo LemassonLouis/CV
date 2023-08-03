@@ -1,16 +1,31 @@
 <!DOCTYPE html>
 <html lang="fr">
 
-<!-- Hi, you find this "easter egg", it's just to say that I need to review this HTML structure to improve the SEO, it's in my todo list, bye and enjoy ;) -->
+<!-- Hi, you find this "easter egg", it's just to say that I will change CSS into SCSS, it's in my todo list, bye and enjoy ;) -->
 
 <head>
-    <title>Curriculum Vitae LEMASSON Louis</title>
+    <title>LEMASSON Louis - Curriculum Vitae</title>
+
+    <meta name="subject" content="Curriculum Vitae de LEMASSON Louis">
+    <meta name="description" content="Présentation du Curriculum Vitae de LEMASSON Louis, Développeur Full Stack en alternance.">
+    <meta name="keywords" content="Curriculum, Vitae, Curriculum Vitae, LEMASSON, Louis, LEMASSON Louis, Développeur, Web, Développeur Web, Full Stack, Développeur Full Stack, Alternance">
+    <meta name="creator" content="LEMASSON Louis">
+    <meta name="author" content="LEMASSON Louis">
+    <meta name="publisher" content="LEMASSON Louis">
 
     <meta charset="UTF-8">
+    <!-- <meta name="viewport" content="width=device-width, initial-scale=1.0"> -->
+    <meta name="color-scheme" content="light" />
+
+    <meta name="revisit-After" content="31 days">
+    <meta name="robots" content="index">
+    <meta name="rating" content="general">
+    <meta name="distribution" content="global">
+    <meta name="geography" content="France">
+    <meta name="category" content="internet">
 
     <link rel="stylesheet" href="./css/page.css">
     <link rel="stylesheet" href="./css/CV.css">
-    <link rel="stylesheet" href="./css/download.css">
     <link rel="stylesheet" href="./css/variable.css">
     <link rel="stylesheet" href="./css/fonts.css">
 
@@ -26,274 +41,225 @@
 </head>
 
 <body class="A4">
-    <section id="CV" class="sheet">
+    <header>
+        <h1>Curriculum Vitae</h1>
+    </header>
 
-        <!-- <img style="position: absolute; width: 100%; opacity: 0.2;" src="./img/CV info exemple.jpg"> -->
+    <main id="CV" class="sheet">
 
-        <img id="photo" src="./img/Photo de moi tronque.jpg">
-
-
-        <div id="header-band">
-            <span>Actuellement en 1ère année de master Développeur Full Stack en alternance, je souhaite intégrer une autre société pour septembre 2023 afin de réaliser la 2ème année.</span>
+        <div id="picture">
+            <img src="./img/Louis-LEMASSON.jpg" alt="Photo de Louis LEMASSON">
         </div>
 
-
-        <div id="aside-band">
-            <div class="aside-block">
-                <div class="block-title">LEMASSON <span>Louis</span></div>
-                <div class="aside-link"><a class="aside-text-link" href="tel:0626420447">06 26 42 04 47</a></div>
-                <div id="mail" class="aside-link"><a class="aside-text-link" href="mailto:louis.lemasson.pro@gmail.com">louis.lemasson.pro@gmail.com</a></div>
-                <div class="aside-link">
-                    <a class="aside-text-link" href="https://www.google.com/maps/place/19+Rue+du+Pr%C3%A9+Castel,+14210+Gavrus/@49.115998,-0.5147998,17z/data=!3m1!4b1!4m6!3m5!1s0x480a46069d5c3433:0x2af70dbed9de4a27!8m2!3d49.1159945!4d-0.5126111!16s%2Fg%2F11c5ln434d" target="_blank">
-                        19 rue du pré Castel<br>
-                        14210 - GAVRUS
-                    </a>
-                </div>
-                <div class="aside-text">Permis B avec véhicule</div>
-                <div class="aside-link"><img class="aside-link-img" src="./img/Github.png"><a class="aside-link-a" href="https://github.com/LemassonLouis">LemassonLouis</a></div>
-                <div class="aside-link"><img class="aside-link-img" src="./img/LinkedIn.png"><a class="aside-link-a" href="https://www.linkedin.com/in/louis-lemasson-6b9709186/">Louis Lemasson</a></div>
-            </div>
-
-            <div class="aside-block">
-                <div class="block-title">Soft skills</div>
-                <div class="aside-text">Motivé</div>
-                <div class="aside-text">Organisé</div>
-                <div class="aside-text">Communicatif</div>
-                <div class="aside-text">Positif</div>
-                <!-- <div class="aside-text">Autonome</div> -->
-            </div>
-
-            <div class="aside-block">
-                <div class="block-title">Qualifications</div>
-                <div class="aside-text">BAC STI2D</div>
-                <div class="aside-text">BTS SIO</div>
-                <div class="aside-text">Titre CDA</div>
-                <div class="aside-text">Bach. Développeur Web</div>
-                <div class="aside-text">Certification OPQUAST</div>
-            </div>
-
-            <div class="aside-block">
-                <div class="block-title">Langues</div>
-                <div class="aside-text">Anglais (B2)</div>
-                <div class="aside-text">Espagnol (A1)</div>
-            </div>
-
-            <div class="aside-block">
-                <div class="block-title">Intérêts</div>
-                <div class="aside-images-block">
-                    <img src="./img/Mannette.png">
-                    <img src="./img/Algorithme.png">
-                    <img src="./img/Sciences.png">
-                    <img src="./img/Escalade.png">
-                </div>
-            </div>
+        <div id="catch_phrase">
+            <p>
+                Actuellement en 1ère année de master Développeur Full Stack en alternance, je souhaite intégrer une autre
+                société pour septembre 2023 afin de réaliser la 2ème année.
+            </p>
         </div>
 
+        <div id="aside">
+            <section>
+                <h2 class="section-title">LEMASSON <span>Louis</span></h2>
+                <ul>
+                    <li><a href="tel:0626420447">06.26.42.04.47</a></li>
+                    <li><a id="mail" href="mailto:louis.lemasson.pro@gmail.com">louis.lemasson.pro@gmail.com</a></li>
+                    <li><a href="https://www.google.com/maps/place/19+Rue+du+Pr%C3%A9+Castel,+14210+Gavrus/@49.115998,-0.5147998,17z/data=!3m1!4b1!4m6!3m5!1s0x480a46069d5c3433:0x2af70dbed9de4a27!8m2!3d49.1159945!4d-0.5126111!16s%2Fg%2F11c5ln434d" target="_blank">
+                            19 rue du pré Castel<br>
+                            14210 - GAVRUS
+                        </a>
+                    </li>
+                    <li>Permis B avec véhicule</li>
+                    <li><a class="before-img" id="Github" href="https://github.com/LemassonLouis">LemassonLouis</a></li>
+                    <li><a class="before-img" id="LinkedIn" href="https://www.linkedin.com/in/louis-lemasson-6b9709186/">Louis Lemasson</a></li>
+                </ul>
+            </section>
 
-        <div id="body-band">
-            <div class="body-block">
-                <div class="block-title">Compétences</div>
+            <section>
+                <h2 class="section-title">Soft skills</h2>
+                <ul>
+                    <li>Motivé</li>
+                    <li>Organisé</li>
+                    <li>Communicatif</li>
+                    <li>Positif</li>
+                    <!-- <li>Autonome</li> -->
+                    <!-- <li>À l'écoute</li> -->
+                </ul>
+            </section>
 
-                <div class="block-skill-fieldset">
-                    <legend class="skill-title-fieldset">Langages de développement</legend>
+            <section>
+                <h2 class="section-title">Qualifications</h2>
+                <ul>
+                    <li title="Baccalauréat Science et Technologie de l'Industrie et du Développement Durable - Systèmes d'Information Numérique">BAC STI2D - SIN</li>
+                    <li title="Brevet de Technicien Supérieur Service Informatique aux Organisations - Solutions Logicielles et Applications Métiers">BTS SIO - SLAM</li>
+                    <li title="Tire Concepteur Développeur d'Applications">Titre Conc. Dév. d'App.</li>
+                    <li title="Bachelor Développeur Web">Bach. Développeur Web</li>
+                    <li title="Certification OPen QUAlity STandards">Certification OPQUAST</li>
+                    <!-- <li title="Master Développeur Full Stack">Master Dév. Full Stack</li> -->
+                    <!-- <li title="Titre Manager de projet web et digital">Titre Manager proj. web dig.</li> -->
+                </ul>
+            </section>
 
-                    <div class="skill-text">
-                        <div class="skill-diamond"></div>
-                        HTML
-                    </div>
+            <section>
+                <h2 class="section-title">Langues</h2>
+                <ul>
+                    <li>Anglais (B2)</li>
+                    <li>Espagnol (A1)</li>
+                </ul>
+            </section>
 
-                    <div class="skill-text">
-                        <div class="skill-diamond"></div>
-                        CSS
-                    </div>
-
-                    <div class="skill-text">
-                        <div class="skill-diamond"></div>
-                        PHP
-                    </div>
-
-                    <div class="skill-text">
-                        <div class="skill-diamond"></div>
-                        JavaScript
-                    </div>
-
-                    <div class="skill-text">
-                        <div class="skill-diamond"></div>
-                        TypeScript
-                    </div>
-
-                    <div class="skill-text">
-                        <div class="skill-diamond"></div>
-                        SQL
-                    </div>
-
-                    <!-- <div class="skill-text">
-                        <div class="skill-diamond"></div>
-                        Linux
-                    </div> -->
-
-                    <div class="skill-text">
-                        <div class="skill-diamond"></div>
-                        WLangage
-                    </div>
-
-                    <div class="skill-text">
-                        <div class="skill-diamond"></div>
-                        Python
-                    </div>
-
-                    <div class="skill-text">
-                        <div class="skill-diamond"></div>
-                        Visual basic
-                    </div>
+            <section>
+                <h2 class="section-title">Intérêts</h2>
+                <div class="images-block">
+                    <img src="./img/JVJdS.png" alt="Jeux vidéo et jeux de société" title="Jeux vidéo et jeux de société">
+                    <img src="./img/SciencesTechnologies.png" alt="Sciences et Technologies" title="Sciences et Technologies">
+                    <img src="./img/Algorithme.png" alt="Algorithmie" title="Algorithmie">
+                    <img src="./img/Escalade.png" alt="Escalade" title="Escalade">
                 </div>
-
-                <div class="block-skill-fieldset">
-                    <legend class="skill-title-fieldset">Librairies</legend>
-
-                    <!-- <div class="skill-text">
-                        <div class="skill-diamond"></div>
-                        JQuery
-                    </div> -->
-
-                    <div class="skill-text">
-                        <div class="skill-diamond"></div>
-                        React
-                    </div>
-
-                    <div class="skill-text">
-                        <div class="skill-diamond"></div>
-                        BabylonJS
-                    </div>
-
-                    <div class="skill-text">
-                        <div class="skill-diamond"></div>
-                        html2pdf
-                    </div>
-
-                    <!-- <div class="skill-text">
-                        <div class="skill-diamond"></div>
-                        DiscordJS
-                    </div> -->
-                </div>
-
-                <div class="block-skill-fieldset">
-                    <legend class="skill-title-fieldset">Frameworks</legend>
-
-                    <div class="skill-text">
-                        <div class="skill-diamond"></div>
-                        Symfony
-                    </div>
-
-                    <div class="skill-text">
-                        <div class="skill-diamond"></div>
-                        Remix
-                    </div>
-
-                    <div class="skill-text">
-                        <div class="skill-diamond"></div>
-                        Prisma
-                    </div>
-
-                    <div class="skill-text">
-                        <div class="skill-diamond"></div>
-                        NestJS
-                    </div>
-
-                    <div class="skill-text">
-                        <div class="skill-diamond"></div>
-                        TypeORM
-                    </div>
-                </div>
-
-                <div class="block-skill-fieldset">
-                    <legend class="skill-title-fieldset">Autres</legend>
-
-                    <div class="skill-text">
-                        <div class="skill-diamond"></div>
-                        GIT
-                    </div>
-
-                    <div class="skill-text">
-                        <div class="skill-diamond"></div>
-                        SCRUM
-                    </div>
-
-                    <div class="skill-text">
-                        <div class="skill-diamond"></div>
-                        NodeJS
-                    </div>
-
-                    <div class="skill-text">
-                        <div class="skill-diamond"></div>
-                        Docker
-                    </div>
-
-                    <!-- <div class="skill-text">
-                        <div class="skill-diamond"></div>
-                        Wordpress
-                    </div> -->
-                </div>
-            </div>
-
-            <div class="body-block">
-                <div class="block-title">Expériences professionnelles</div>
-
-                <div class="block-experience">
-                    <div class="experience-sphere"></div>
-                    <div class="experience-title">LEONARD SOLUTIONS - Caen - 2020/2023</div>
-                    <div class="experience-bar"></div>
-                    <div class="experience-text">
-                        Alternance, une année en tant que technicien hotliner et 2 autres en tant que développeur.<br>
-                        - Répondre aux besoins des clients, tant problèmes/bugs que demandes ponctuelles.<br>
-                        - Réalisations de modèles de documents en html, css + excel.<br>
-                        - Réalisations de statistiques sous windev.<br>
-                        - Réalisation d'une UI Windev communiquant par API avec l'outil de ticket REDMINE.<br>
-                        - Projet de développement d'une UI comme SketchUp en JavaScript et PHP avec BabylonJS.
-                    </div>
-                </div>
-
-                <div class="block-experience">
-                    <div class="experience-sphere"></div>
-                    <div class="experience-title">HARDY PAYSAGE - Villers Bocage - 2020</div>
-                    <div class="experience-bar"></div>
-                    <div class="experience-text">
-                        Stage professionnel de 6 semaines dans une auto entreprise.<br>
-                        - Réalisation d'un nouveau logo et d'une carte de visite.<br>
-                        - Réalisation d'un site internet vitrine : <a class="experience-text-link"
-                            href="http://www.hardy-paysage.fr">www.hardy-paysage.fr</a> (plus disponible).<br>
-                        - Déploiement du site sur un hébergeur web.
-                    </div>
-                </div>
-
-                <div class="block-experience">
-                    <div class="experience-sphere"></div>
-                    <div class="experience-title">DAHER - Saint Nazer - 2019</div>
-                    <div class="experience-bar"></div>
-                    <div class="experience-text">
-                        Stage professionnel de 6 semaines.<br>
-                        - Extractions de données SAP puis anaylses et mises en forme sous Excel.<br>
-                        - Développement d'une macro Excel.
-                    </div>
-                </div>
-
-                <div class="block-experience">
-                    <div class="experience-sphere"></div>
-                    <div class="experience-title">NATIXIS INTEREPARGNE - Caen - 2019</div>
-                    <div class="experience-bar"></div>
-                    <div class="experience-text">
-                        Emploi saisonnier comme stagiaire pendant 1 mois au service rachats.<br>
-                        - Modifications de données administratives.<br>
-                        - Enregistrements de demandes de déblocages anticipés de l'épargne salariale.<br>
-                        - Archivages de documents.
-                    </div>
-                </div>
-            </div>
+            </section>
         </div>
 
-    </section>
+        <div id="content">
+            <section id="skills">
+                <h2 class="section-title">Compétences</h2>
 
-    <button id="download" onclick="download()">Télécharger le CV</button>
+                <article>
+                    <h3>Langages de développement</h3>
+                    <ul>
+                        <li>HTML</li>
+                        <li>CSS</li>
+                        <li>PHP</li>
+                        <li>JavaScript</li>
+                        <li>TypeScript</li>
+                        <li>SQL</li>
+                        <!-- <li>Java</li> -->
+                        <!-- <li>Linux</li> -->
+                        <li>WLangage</li>
+                        <li>Python</li>
+                        <li>Visual basic</li>
+                    </ul>
+                </article>
+
+                <article>
+                    <h3>Librairies</h3>
+                    <ul>
+                        <!-- <li>JQuery</li> -->
+                        <li>React</li>
+                        <li>BabylonJS</li>
+                        <li>html2pdf</li>
+                        <!-- <li>DiscordJS</li> -->
+                    </ul>
+                </article>
+
+                <article>
+                    <h3>Frameworks</h3>
+                    <ul>
+                        <li>Symfony</li>
+                        <li>Remix</li>
+                        <li>Prisma</li>
+                        <li>NestJS</li>
+                        <li>TypeORM</li>
+                    </ul>
+                </article>
+
+                <article>
+                    <h3>Autres</h3>
+                    <ul>
+                        <li>Git</li>
+                        <!-- <li>GitLab</li> -->
+                        <li>Scrum</li>
+                        <li>NodeJS</li>
+                        <li>Redmine</li>
+                        <li>Docker</li>
+                        <!-- <li>Wordpress</li> -->
+                        <!-- <li>PrestaShop</li> -->
+                    </ul>
+                </article>
+            </section>
+
+            <section id="experiences">
+                <h2 class="section-title">Expériences professionnelles</h2>
+
+                <!-- <article>
+                    <div class="experience-titles">
+                        <h3>lternant Développeur automatisation de test, <span>09/2023 - Actuel</span></h3>
+                        <h4>AFIDIUM <span>- Massy (distanciel)</span></h4>
+                    </div>
+                    <ul>
+                        <li>Automatisation des tests</li>
+                    </ul>
+                </article> -->
+
+                <article>
+                    <div class="experience-titles">
+                        <h3>Alternant Développeur, <span>09/2021 - Actuel<!-- 08/2023 --></span></h3>
+                        <h4>Léonard Solutions <span>- Caen (présentiel)</span></h4>
+                    </div>
+                    <ul>
+                        <li>
+                            Participation au projet de développement d'une interface utilisateur intégrant un moteur de rendu 3D
+                            en HTML, SCSS, JavaScript et PHP avec les librairies JQuery et BabylonJS.
+                        </li>
+                        <li class="additional">Mise en place de Git.</li>
+                        <li class="additional">Mise en place d'une méthode agile style Scrum.</li>
+                    </ul>
+                </article>
+
+                <article>
+                    <div class="experience-titles">
+                        <h3>Alternant Technicien Hotlineur, <span>09/2020 - 08/2021</span></h3>
+                        <h4>Léonard Solutions <span>- Caen (présentiel)</span></h4>
+                    </div>
+                    <ul>
+                        <li>Répondre aux besoins des clients, tant problèmes/bugs que demandes ponctuelles.</li>
+                        <li>Réalisations de modèles de documents en HTML et CSS + Excel.</li>
+                        <li>Réalisations de statistiques en WLangage interprétable par WinDev.</li>
+                        <li class="additional">Réalisation d'une UI WinDev communiquant avec l'API REST de Redmine.</li>
+                    </ul>
+                </article>
+
+                <article>
+                    <div class="experience-titles">
+                        <h3>Stage professionnel Développeur, <span>05/2020 - 6 semaines</span></h3>
+                        <h4>Hardy Paysage (auto-entrepreneur) <span>- Villers Bocage (hybride)</span></h4>
+                    </div>
+                    <ul>
+                        <li>Réalisation d'un site internet vitrine : <a class="experience-text-link" href="http://www.hardy-paysage.fr">www.hardy-paysage.fr</a> (plus disponible).</li>
+                        <li>Déploiement du site sur un hébergeur web.</li>
+                        <li class="additional">Réalisation d'un nouveau logo et d'une carte de visite.</li>
+                    </ul>
+                </article>
+
+                <!-- <article>
+                    <div class="experience-titles">
+                        <h3>Emploi saisonnier service rachats, <span>08/2019 - 1 mois</span></h3>
+                        <h4>Natixis Interépargne <span>- Caen (présentiel)</span></h4>
+                    </div>
+                    <ul>
+                        <li>Modifications de données administratives.</li>
+                        <li>Enregistrements de demandes de déblocages anticipés de l'épargne salariale.</li>
+                        <li>Archivages de documents.</li>
+                    </ul>
+                </article> -->
+
+                <article>
+                    <div class="experience-titles">
+                        <h3>Stage professionnel Développeur, <span>06/2019 - 6 semaines</span></h3>
+                        <h4>Daher <span>- Saint Nazer (présentiel)</span></h4>
+                    </div>
+                    <ul>
+                        <li>Extractions de données SAP puis anaylses et mises en forme sous Excel.</li>
+                        <li class="additional">Développement d'une macro Excel.</li>
+                    </ul>
+                </article>
+            </section>
+        </div>
+
+    </main>
+
+    <footer>
+        <button id="download" onclick="download()">Télécharger le CV</button>
+    </footer>
 </body>
 
 </html>
