@@ -1,16 +1,31 @@
 <!DOCTYPE html>
 <html lang="fr">
 
-<!-- Hi, you find this "easter egg", it's just to say that I need to review this HTML structure to improve the SEO, it's in my todo list, bye and enjoy ;) -->
+<!-- Hi, you find this "easter egg", it's just to say that I will change CSS into SCSS, it's in my todo list, bye and enjoy ;) -->
 
 <head>
-    <title>Curriculum Vitae LEMASSON Louis</title>
+    <title>LEMASSON Louis - Curriculum Vitae</title>
+
+    <meta name="subject" content="Curriculum Vitae de LEMASSON Louis">
+    <meta name="description" content="Présentation du Curriculum Vitae de LEMASSON Louis, Développeur Full Stack en alternance.">
+    <meta name="keywords" content="Curriculum, Vitae, Curriculum Vitae, LEMASSON, Louis, LEMASSON Louis, Développeur, Web, Développeur Web, Full Stack, Développeur Full Stack, Alternance">
+    <meta name="creator" content="LEMASSON Louis">
+    <meta name="author" content="LEMASSON Louis">
+    <meta name="publisher" content="LEMASSON Louis">
 
     <meta charset="UTF-8">
+    <!-- <meta name="viewport" content="width=device-width, initial-scale=1.0"> -->
+    <meta name="color-scheme" content="light" />
+
+    <meta name="revisit-After" content="31 days">
+    <meta name="robots" content="index">
+    <meta name="rating" content="general">
+    <meta name="distribution" content="global">
+    <meta name="geography" content="France">
+    <meta name="category" content="internet">
 
     <link rel="stylesheet" href="./css/page.css">
     <link rel="stylesheet" href="./css/CV.css">
-    <link rel="stylesheet" href="./css/download.css">
     <link rel="stylesheet" href="./css/variable.css">
     <link rel="stylesheet" href="./css/fonts.css">
 
@@ -26,17 +41,22 @@
 </head>
 
 <body class="A4">
+    <header>
+        <h1>Curriculum Vitae</h1>
+    </header>
+
     <main id="CV" class="sheet">
 
         <div id="picture">
             <img src="./img/Louis-LEMASSON.jpg" alt="Photo de Louis LEMASSON">
         </div>
 
-        <section id="catch_phrase">
-            <h1 hidden>LEMASSON Louis - Curriculum Vitae</h1>
-            <p>Actuellement en 1ère année de master Développeur Full Stack en alternance, je souhaite intégrer une autre
-                société pour septembre 2023 afin de réaliser la 2ème année.</p>
-        </section>
+        <div id="catch_phrase">
+            <p>
+                Actuellement en 1ère année de master Développeur Full Stack en alternance, je souhaite intégrer une autre
+                société pour septembre 2023 afin de réaliser la 2ème année.
+            </p>
+        </div>
 
         <div id="aside">
             <section>
@@ -237,7 +257,9 @@
 
     </main>
 
-    <button id="download" onclick="download()">Télécharger le CV</button>
+    <footer>
+        <button id="download" onclick="download()">Télécharger le CV</button>
+    </footer>
 </body>
 
 </html>
