@@ -1,0 +1,300 @@
+/* ---------- GENERAL ---------- */
+
+    body {
+        font-family: $font-family-medium;
+        color: $text-base-color;
+    }
+
+    header {
+        text-align: center;
+    }
+
+    h2,h3,h4 {
+        margin-block: 0mm;
+    }
+
+    a {
+        color: inherit;
+
+        &:visited {
+            color: $link-visited-color;
+        }
+
+        &:hover {
+            color: $link-hover-color;
+        }
+    }
+
+    ul {
+        list-style-type: none;
+        margin-block: 0mm;
+        padding-inline-start: 0px;
+    }
+
+    footer {
+        text-align: center;
+        height: 20mm;
+    }
+
+    /** On print **/
+    @media print {
+
+        body>*:not(#CV) {
+            display: none;
+        }
+
+        a {
+            text-decoration: none;
+
+            &:visited,
+            &:hover {
+                color: inherit;
+            }
+        }
+
+    }
+
+/* -------------------- */
+
+
+/* ---------- PAGE CV ---------- */
+
+    #CV {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+    }
+
+    .section-title {
+        padding-left: $shift-left;
+        font-size: $section-title-size;
+        font-family: $font-family-medium;
+        border-bottom: $line-bottom;
+        text-transform: uppercase;
+
+        >span {
+            text-transform: capitalize;
+        }
+    }
+
+/* -------------------- */
+
+
+#picture {
+    width: $picture-width;
+    height: $picture-height;
+    background-color: $cp-bg-color;
+
+    >img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+    }
+}
+
+
+#catch_phrase {
+    box-sizing: border-box;
+    display: flex;
+    align-items: center;
+    width: $cp-width;
+    height: $cp-height;
+    padding: $cp-padding;
+    background-color: $cp-bg-color;
+
+    >p {
+        margin: 0;
+        color: $cp-text-color;
+        font-size: $cp-text-size;
+        font-family: $font-family-bold;
+        text-align: center;
+    }
+}
+
+
+#aside {
+    display: flex;
+    flex-flow: column nowrap;
+    align-items: center;
+    width: $aside-width;
+    height: $aside-height;
+    background-color: $aside-bg-color;
+
+    >section {
+        margin-top: $aside-section-margtop;
+        margin-bottom: $aside-section-margbot;
+        width: $aside-section-width;
+
+        >ul>li {
+            padding: $aside-section-elm-pad;
+            font-size: $aside-text-size;
+            color: $text-base-color;
+            border-bottom: $line-bottom;
+
+            >#mail {
+                font-size: 9pt;
+            }
+
+            >#Github::before {
+                background-image: url(../img/Github.png);
+            }
+
+            >#LinkedIn::before {
+                background-image: url(../img/LinkedIn.png);
+            }
+
+            >.before-img::before {
+                content: "";
+                background-size: $aside-img-before-size;
+                display: inline-block;
+                width: $aside-img-before-size;
+                height: $aside-img-before-size;
+                margin-right: $aside-img-before-margright;
+                vertical-align: top;
+            }
+        }
+
+        >.images-block {
+            display: flex;
+            flex-direction: row;
+            flex-wrap: wrap;
+            justify-content: space-around;
+            padding-top: 2mm;
+
+            >img {
+                width: 40%;
+                object-fit: contain;
+                padding-bottom: 2mm;
+                opacity: 0.6;
+            }
+        }
+    }
+}
+
+
+#content {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    align-items: center;
+    width: $content-width;
+    height: $content-height;
+    background-color: $content-bg-color;
+
+    >section {
+        margin-top: $content-section-margtop;
+        margin-bottom: $content-section-margbot;
+        width: $content-section-width;
+
+        &#skills>article {
+            position: relative;
+            display: flex;
+            flex-flow: row wrap;
+            margin-top: $content-article-margtop;
+            padding: $skills-padding;
+            border: $skills-lines;
+
+            >h3 {
+                position: absolute;
+                margin-top: -6mm;
+                padding: 0mm 1mm;
+                font-size: $skills-title-size;
+                font-family: $font-family-medium;
+                text-transform: uppercase;
+                background-color: $content-bg-color;
+            }
+
+            >ul {
+                display: grid;
+                grid-template-columns: repeat(auto-fit, $skills-column);
+                width: 100%;
+
+                >li {
+                    display: inline;
+                    padding: 0.5mm 0mm;
+                    font-size: $skills-text-size;
+
+                    &::before {
+                        content: "";
+                        display: inline-block;
+                        margin-right: $diamond-margright;
+                        width: $diamond-size;
+                        height: $diamond-size;
+                        transform: rotate(45deg);
+                        background-color: $diamond-center-color;
+                        border: $diamond-border;
+                    }
+                }
+            }
+        }
+
+        &#experiences>article {
+            margin-left: $shift-left;
+            padding-bottom: $experiences-article-padbot;
+            border-left: $experiences-lines;
+
+            &:first-of-type {
+                margin-top: $content-article-margtop;
+
+                &>.experience-titles>h3 {
+                    margin-left: -$experiences-lines-size;
+                    border-left: $experiences-lines-special;
+                }
+            }
+
+            >.experience-titles {
+                position: relative;
+
+                >h3, >h4 {
+                    padding-left: $experiences-titles-padleft;
+                    width: calc(100% - $circle-size - $experiences-titles-padleft);
+                    font-size: $content-title-size;
+                    font-family: $font-family-medium;
+                }
+
+                >h4 {
+                    margin-bottom: $experiences-titles-padbot;
+                }
+
+                >*>span {
+                    font-family: $font-family-medium;
+                    font-weight: initial;
+                    font-size: $font-family-medium;
+                }
+
+                &::before {
+                    content: "";
+                    box-sizing: border-box;
+                    position: absolute;
+                    left: -2.5mm;
+                    top: 50%;
+                    translate: 0 -50%;
+                    width: $circle-size;
+                    height: $circle-size;
+                    background-color: $circle-center-color;
+                    border: $circle-border;
+                    border-radius: $circle-size;
+                }
+            }
+
+            >ul>li {
+                margin-left: $experiences-text-margleft;
+                padding-left: $experiences-text-marker-margright;
+                font-family: $font-family-light;
+                font-size: $content-text-size;
+                line-height: $experiences-text-lineheight;
+                color: $text-base-color;
+                width: calc(100% - $circle-size - $experiences-titles-padleft);
+
+                &::marker {
+                    content: "•";
+                }
+
+                &.additional::marker {
+                    content: "+";
+                    font-weight: bold;
+                }
+            }
+        }
+    }
+}
