@@ -1,0 +1,107 @@
+/* ----- GENERAL ----- */
+$black: #000;
+$white: #FFF;
+
+$cv_gray: #444;
+$cv_light-gray: #EAEAEA;
+$cv_blue: #0095FF;
+$cv_darker-blue: #0065AD;
+
+$page-width: 210mm;
+$page-height: 297mm;
+
+$font-family-light: "Nunito Light", sans-serif;
+$font-family-medium: "Nunito Medium", sans-serif;
+$font-family-bold: "Nunito Extra Bold", sans-serif;
+
+
+/* ----- GENERAL SIZE ----- */
+$shift-left: 1mm;
+
+
+/* ----- GENERAL FONTS ----- */
+$text-base-color: $black;
+
+$link-hover-color: $cv_blue;
+$link-visited-color: $cv_darker-blue;
+
+
+/* ----- GENERAL SHAPES ----- */
+$line-bottom: solid 1px $black;
+
+
+/* ----- FONTS SIZE ----- */
+$cp-text-size: 15.5pt;
+$section-title-size: 13pt;
+$aside-text-size: 10pt;
+$skills-title-size: 11pt;
+$skills-text-size: 9.5pt;
+$content-title-size: 11pt;
+$content-text-size: 9pt;
+
+
+/* ----- PICTURE ----- */
+$picture-width: 60mm;
+$picture-height: 40mm;
+
+
+/* ----- CATCH_PHRASE ----- */
+$cp-width: $page-width - $picture-width;
+$cp-height: $picture-height;
+$cp-bg-color: $cv_darker-blue;
+$cp-padding: 0mm 10mm;
+$cp-text-color: $white;
+
+
+/* ----- ASIDE ----- */
+$aside-width: $picture-width;
+$aside-height: $page-height - $picture-height;
+$aside-bg-color: $cv_light-gray;
+$aside-section-margtop: 8mm;
+$aside-section-margbot: 4mm;
+$aside-section-width: 80%;
+$aside-section-elm-pad: 1mm 1mm 0mm $shift-left;
+$aside-img-before-size: 4mm;
+$aside-img-before-margright: 1mm;
+
+
+/* ----- CONTENT ----- */
+$content-width: $page-width - $aside-width;
+$content-height: $page-height - $cp-height;
+$content-bg-color: $white;
+$content-section-margtop: 8mm;
+$content-section-margbot: 2mm;
+$content-section-width: 90%;
+$content-article-margtop: 4mm;
+
+
+/* ----- SKILLS ----- */
+$skills-padding: 3mm 4mm 2mm 4mm;
+$skills-lines: solid 2px $black;
+$skills-column: 20%;
+
+
+/* ----- DIAMOND ----- */
+$diamond-size: 2mm;
+$diamond-margright: 2mm;
+$diamond-center-color: $cv_blue;
+$diamond-border: solid 1px $black;
+
+
+/* ----- EXPERIENCES ----- */
+$experiences-article-padbot: 6mm;
+$experiences-titles-padleft: 4mm;
+$experiences-titles-padbot: 0.5mm;
+$experiences-text-margleft: $experiences-titles-padleft + 2mm;
+$experiences-text-lineheight: 4.5mm;
+
+$experiences-text-marker-margright: 1mm;
+
+$experiences-lines-size: 2px;
+$experiences-lines: solid $experiences-lines-size $black;
+$experiences-lines-special: solid $experiences-lines-size $content-bg-color;
+
+/* ----- CIRCLES ----- */
+$circle-size: 4.5mm;
+$circle-center-color: $cv_blue;
+$circle-border: $experiences-lines;

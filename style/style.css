@@ -1,0 +1,321 @@
+@charset "UTF-8";
+@page {
+  margin: 0;
+}
+body {
+  margin: 0;
+}
+
+.sheet {
+  margin: 0;
+  overflow: hidden;
+  position: relative;
+  box-sizing: border-box;
+  page-break-after: always;
+}
+
+/** Paper sizes **/
+body.A4 .sheet {
+  width: 210mm;
+  height: 297mm;
+}
+
+/** For screen preview **/
+@media screen {
+  body {
+    background: #e0e0e0;
+  }
+  .sheet {
+    background: white;
+    box-shadow: 0 0.5mm 2mm rgba(0, 0, 0, 0.3);
+    margin: 5mm auto;
+  }
+}
+/** For print preview **/
+@media print {
+  body.A4 {
+    width: 210mm;
+  }
+}
+@font-face {
+  font-family: "Nunito Light";
+  src: url("./fonts/Nunito-Light.woff") format("woff");
+}
+@font-face {
+  font-family: "Nunito Medium";
+  src: url("./fonts/Nunito-Medium.woff") format("woff");
+}
+@font-face {
+  font-family: "Nunito Extra Bold";
+  src: url("./fonts/Nunito-ExtraBold.woff") format("woff");
+}
+/* ----- GENERAL ----- */
+/* ----- GENERAL SIZE ----- */
+/* ----- GENERAL FONTS ----- */
+/* ----- GENERAL SHAPES ----- */
+/* ----- FONTS SIZE ----- */
+/* ----- PICTURE ----- */
+/* ----- CATCH_PHRASE ----- */
+/* ----- ASIDE ----- */
+/* ----- CONTENT ----- */
+/* ----- SKILLS ----- */
+/* ----- DIAMOND ----- */
+/* ----- EXPERIENCES ----- */
+/* ----- CIRCLES ----- */
+/* ---------- GENERAL ---------- */
+body {
+  font-family: "Nunito Medium", sans-serif;
+  color: #000;
+}
+
+header {
+  text-align: center;
+}
+
+h2, h3, h4 {
+  margin-block: 0mm;
+}
+
+a {
+  color: inherit;
+}
+a:visited {
+  color: #0065AD;
+}
+a:hover {
+  color: #0095FF;
+}
+
+ul {
+  list-style-type: none;
+  margin-block: 0mm;
+  padding-inline-start: 0px;
+}
+
+footer {
+  text-align: center;
+  height: 20mm;
+}
+
+/** On print **/
+@media print {
+  body > *:not(#CV) {
+    display: none;
+  }
+  a {
+    text-decoration: none;
+  }
+  a:visited, a:hover {
+    color: inherit;
+  }
+}
+/* -------------------- */
+/* ---------- PAGE CV ---------- */
+#CV {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+
+.section-title {
+  padding-left: 1mm;
+  font-size: 13pt;
+  font-family: "Nunito Medium", sans-serif;
+  border-bottom: solid 1px #000;
+  text-transform: uppercase;
+}
+.section-title > span {
+  text-transform: capitalize;
+}
+
+/* -------------------- */
+#picture {
+  width: 60mm;
+  height: 40mm;
+  background-color: #0065AD;
+}
+#picture > img {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+#catch_phrase {
+  box-sizing: border-box;
+  display: flex;
+  align-items: center;
+  width: 150mm;
+  height: 40mm;
+  padding: 0mm 10mm;
+  background-color: #0065AD;
+}
+#catch_phrase > p {
+  margin: 0;
+  color: #FFF;
+  font-size: 15.5pt;
+  font-family: "Nunito Extra Bold", sans-serif;
+  text-align: center;
+}
+
+#aside {
+  display: flex;
+  flex-flow: column nowrap;
+  align-items: center;
+  width: 60mm;
+  height: 257mm;
+  background-color: #EAEAEA;
+}
+#aside > section {
+  margin-top: 8mm;
+  margin-bottom: 4mm;
+  width: 80%;
+}
+#aside > section > ul > li {
+  padding: 1mm 1mm 0mm 1mm;
+  font-size: 10pt;
+  color: #000;
+  border-bottom: solid 1px #000;
+}
+#aside > section > ul > li > #mail {
+  font-size: 9pt;
+}
+#aside > section > ul > li > #Github::before {
+  background-image: url(../img/Github.png);
+}
+#aside > section > ul > li > #LinkedIn::before {
+  background-image: url(../img/LinkedIn.png);
+}
+#aside > section > ul > li > .before-img::before {
+  content: "";
+  background-size: 4mm;
+  display: inline-block;
+  width: 4mm;
+  height: 4mm;
+  margin-right: 1mm;
+  vertical-align: top;
+}
+#aside > section > .images-block {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  padding-top: 2mm;
+}
+#aside > section > .images-block > img {
+  width: 40%;
+  -o-object-fit: contain;
+     object-fit: contain;
+  padding-bottom: 2mm;
+  opacity: 0.6;
+}
+
+#content {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: nowrap;
+  align-items: center;
+  width: 150mm;
+  height: 257mm;
+  background-color: #FFF;
+}
+#content > section {
+  margin-top: 8mm;
+  margin-bottom: 2mm;
+  width: 90%;
+}
+#content > section#skills > article {
+  position: relative;
+  display: flex;
+  flex-flow: row wrap;
+  margin-top: 4mm;
+  padding: 3mm 4mm 2mm 4mm;
+  border: solid 2px #000;
+}
+#content > section#skills > article > h3 {
+  position: absolute;
+  margin-top: -6mm;
+  padding: 0mm 1mm;
+  font-size: 11pt;
+  font-family: "Nunito Medium", sans-serif;
+  text-transform: uppercase;
+  background-color: #FFF;
+}
+#content > section#skills > article > ul {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, 20%);
+  width: 100%;
+}
+#content > section#skills > article > ul > li {
+  display: inline;
+  padding: 0.5mm 0mm;
+  font-size: 9.5pt;
+}
+#content > section#skills > article > ul > li::before {
+  content: "";
+  display: inline-block;
+  margin-right: 2mm;
+  width: 2mm;
+  height: 2mm;
+  transform: rotate(45deg);
+  background-color: #0095FF;
+  border: solid 1px #000;
+}
+#content > section#experiences > article {
+  margin-left: 1mm;
+  padding-bottom: 6mm;
+  border-left: solid 2px #000;
+}
+#content > section#experiences > article:first-of-type {
+  margin-top: 4mm;
+}
+#content > section#experiences > article:first-of-type > .experience-titles > h3 {
+  margin-left: -2px;
+  border-left: solid 2px #FFF;
+}
+#content > section#experiences > article > .experience-titles {
+  position: relative;
+}
+#content > section#experiences > article > .experience-titles > h3, #content > section#experiences > article > .experience-titles > h4 {
+  padding-left: 4mm;
+  width: calc(100% - 4.5mm - 4mm);
+  font-size: 11pt;
+  font-family: "Nunito Medium", sans-serif;
+}
+#content > section#experiences > article > .experience-titles > h4 {
+  margin-bottom: 0.5mm;
+}
+#content > section#experiences > article > .experience-titles > * > span {
+  font-family: "Nunito Medium", sans-serif;
+  font-weight: initial;
+  font-size: "Nunito Medium", sans-serif;
+}
+#content > section#experiences > article > .experience-titles::before {
+  content: "";
+  box-sizing: border-box;
+  position: absolute;
+  left: -2.5mm;
+  top: 50%;
+  translate: 0 -50%;
+  width: 4.5mm;
+  height: 4.5mm;
+  background-color: #0095FF;
+  border: solid 2px #000;
+  border-radius: 4.5mm;
+}
+#content > section#experiences > article > ul > li {
+  margin-left: 6mm;
+  padding-left: 1mm;
+  font-family: "Nunito Light", sans-serif;
+  font-size: 9pt;
+  line-height: 4.5mm;
+  color: #000;
+  width: calc(100% - 4.5mm - 4mm);
+}
+#content > section#experiences > article > ul > li::marker {
+  content: "•";
+}
+#content > section#experiences > article > ul > li.additional::marker {
+  content: "+";
+  font-weight: bold;
+}/*# sourceMappingURL=style.css.map */
