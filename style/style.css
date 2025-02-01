@@ -167,8 +167,8 @@ footer {
   background-color: #EAEAEA;
 }
 #aside > section {
-  margin-top: 8mm;
-  margin-bottom: 4mm;
+  margin-top: 7mm;
+  margin-bottom: 3mm;
   width: 80%;
 }
 #aside > section > ul > li {
@@ -231,6 +231,9 @@ footer {
   margin-top: 4mm;
   padding: 3mm 4mm 2mm 4mm;
   border: solid 2px #000;
+}
+#content > section#skills > article:first-of-type {
+  margin-top: 6mm;
 }
 #content > section#skills > article > h3 {
   position: absolute;
