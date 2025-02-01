@@ -14,7 +14,7 @@
     }
 
     a {
-        color: inherit;
+        color: $link-visited-color;
 
         &:visited {
             color: $link-visited-color;
