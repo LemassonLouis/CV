@@ -194,6 +194,10 @@
             padding: $skills-padding;
             border: $skills-lines;
 
+            &:first-of-type {
+                margin-top: 6mm;
+            }
+
             >h3 {
                 position: absolute;
                 margin-top: -6mm;
